@@ -100,7 +100,6 @@ void Player::keyPressEvent(QKeyEvent *event)
         }
         else if (event->key() == Qt::Key_F)
         {
-            canShoot = true;
             if (canShoot)
             {
                 createBullet();
