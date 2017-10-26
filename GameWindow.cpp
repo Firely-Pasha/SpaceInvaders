@@ -30,7 +30,7 @@ void GameWindow::initializeGL()
 
     level = new GameLevel();
 
-    int id = QFontDatabase::addApplicationFont("./sprites/ARCADECLASSIC.TTF");
+    int id = QFontDatabase::addApplicationFont(":resources/sprites/ARCADECLASSIC.TTF");
     QString family = QFontDatabase::applicationFontFamilies(id).at(0);
     font = new QFont(family, 20);
 }

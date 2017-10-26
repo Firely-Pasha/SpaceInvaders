@@ -9,7 +9,7 @@
 
 Enemy::Enemy(QString* name, QVector2D *position, int id) : GameObject(name, position, id)
 {
-    speed = 0.25 / 16;
+    speed = 0.25;
     canShoot = true;
     
     int spriteX = 2;
@@ -21,7 +21,7 @@ Enemy::Enemy(QString* name, QVector2D *position, int id) : GameObject(name, posi
 
     cooldown = rand() % 10000 + 3000;
 
-    texture = new Texture2D("./sprites/SpriteSheet.png", QRect(spriteX, spriteY, spriteWidth, spriteHeight));
+    texture = new Texture2D(":resources/sprites/SpriteSheet.png", QRect(spriteX, spriteY, spriteWidth, spriteHeight));
     setCollider(new QRect(position->x(), position->y(), texture->getWidth(), texture->getHeight()));
 }
 
@@ -44,6 +44,7 @@ void Enemy::update()
     updateCollider();
 
     cooldown--;
+
 
     if (cooldown <= 0)
     {

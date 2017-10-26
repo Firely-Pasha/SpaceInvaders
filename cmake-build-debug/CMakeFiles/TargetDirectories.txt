@@ -1,4 +1,0 @@
-/home/firely-pasha/Documents/Projects/Study/SpaceInvaders/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/firely-pasha/Documents/Projects/Study/SpaceInvaders/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/firely-pasha/Documents/Projects/Study/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir
-/home/firely-pasha/Documents/Projects/Study/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders_automoc.dir

@@ -23,7 +23,7 @@ Player::Player(QString *name, QVector2D *position) : GameObject(name, position, 
     pause = false;
 
 
-    texture = new Texture2D("./sprites/SpriteSheet.png", QRect(spriteX, spriteY, spriteWidth, spriteHeight));
+    texture = new Texture2D(":resources/sprites/SpriteSheet.png", QRect(spriteX, spriteY, spriteWidth, spriteHeight));
     setCollider(new QRect(position->x(), position->y(), texture->getWidth(), texture->getHeight()));
 }
 

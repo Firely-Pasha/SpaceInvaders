@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>sprites/ARCADECLASSIC.TTF</file>
+        <file>sprites/SpriteSheet.png</file>
+    </qresource>
+</RCC>

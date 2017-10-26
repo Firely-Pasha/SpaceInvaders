@@ -11,7 +11,7 @@
 Bullet::Bullet(QVector2D *position, bool upDirection, int id, bool* canShoot, QString* name, bool isPlayer)
         : GameObject(name, position, id)
 {
-    speed = 0.25 / 2;
+    speed = 2;
     this->upDirection = upDirection;
 
     shouldBeKilled = false;
@@ -27,7 +27,7 @@ Bullet::Bullet(QVector2D *position, bool upDirection, int id, bool* canShoot, QS
     QRect *re;
     re = new QRect(31, 432, 1, 4);
 
-    Texture2D *texture2D = new Texture2D("./sprites/SpriteSheet.png", *re);
+    Texture2D *texture2D = new Texture2D(":resources/sprites/SpriteSheet.png", *re);
 
     setTexture(texture2D);
     QRect *coll = new QRect(0, 0, 1, 4);
