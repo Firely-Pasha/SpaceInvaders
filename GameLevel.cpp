@@ -25,7 +25,6 @@ GameLevel::GameLevel()
         Enemy *enemy = new Enemy(new QString("Enemy"), new QVector2D(17 + 17 * (i % 10), 100 + 20 * (i / 10)), i);
         gameObjects.insert(std::pair<int, GameObject *>(i, enemy));
     }
-
 }
 
 GameLevel::~GameLevel()

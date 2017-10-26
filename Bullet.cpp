@@ -21,9 +21,6 @@ Bullet::Bullet(QVector2D *position, bool upDirection, int id, bool* canShoot, QS
 
     *(this->canShoot) = false;
 
-
-
-
     QRect *re;
     re = new QRect(31, 432, 1, 4);
 

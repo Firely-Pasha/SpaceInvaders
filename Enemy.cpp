@@ -6,6 +6,7 @@
 #include "GameLevel.h"
 #include "Texture2D.h"
 #include "Bullet.h"
+#include <QtDebug>
 
 Enemy::Enemy(QString* name, QVector2D *position, int id) : GameObject(name, position, id)
 {
@@ -19,7 +20,7 @@ Enemy::Enemy(QString* name, QVector2D *position, int id) : GameObject(name, posi
 
     shouldBeKilled = false;
 
-    cooldown = rand() % 10000 + 3000;
+    cooldown = rand() % 200 + 100;
 
     texture = new Texture2D(":resources/sprites/SpriteSheet.png", QRect(spriteX, spriteY, spriteWidth, spriteHeight));
     setCollider(new QRect(position->x(), position->y(), texture->getWidth(), texture->getHeight()));
@@ -45,11 +46,10 @@ void Enemy::update()
 
     cooldown--;
 
-
     if (cooldown <= 0)
     {
         createBullet();
-        cooldown = rand() % 10000 + 5000;;
+        cooldown = rand() % 400 + 300;
     }
 }
 
